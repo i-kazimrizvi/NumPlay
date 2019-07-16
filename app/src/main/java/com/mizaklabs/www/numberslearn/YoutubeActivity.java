@@ -18,7 +18,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
 
 
     public YoutubeActivity(){
-        
+
     }
 
     public YoutubeActivity(Activity activity) {
