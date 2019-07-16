@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/playButton"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-150dp"
+            android:layout_weight="4"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/back7"
+                android:scaleType="centerCrop" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeSettingsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/round_right_bottom">
+
+                <ImageButton
+                    android:id="@+id/imageViewSettingsButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/settings"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_left"
+            android:alpha="0.99">
+
+            <com.roughike.swipeselector.SwipeSelector
+                android:id="@+id/swipeSelector1"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_alignParentEnd="true"
+                android:value="@+value/conditionSelector"
+                app:swipe_indicatorSize="5dp"
+                app:swipe_indicatorMargin="5dp"
+                app:swipe_descriptionGravity="center"
+                app:swipe_titleTextAppearance="@style/MyTitleTextApperance"
+                app:swipe_descriptionTextAppearance="@style/MyTitleDescriptionApperance"
+                app:swipe_leftButtonResource="@android:color/transparent"
+                app:swipe_rightButtonResource="@android:color/transparent"
+                />
+
+
+            <com.roughike.swipeselector.SwipeSelector
+                android:id="@+id/swipeSelector2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentEnd="true"
+                android:value="@+value/conditionSelector"
+                app:swipe_indicatorSize="5dp"
+                app:swipe_indicatorMargin="5dp"
+                app:swipe_descriptionGravity="center"
+                app:swipe_titleTextAppearance="@style/MyTitleTextApperance"
+                app:swipe_descriptionTextAppearance="@style/MyTitleDescriptionApperance"
+                app:swipe_leftButtonResource="@android:color/transparent"
+                app:swipe_rightButtonResource="@android:color/transparent"
+                />
+
+
+            <com.roughike.swipeselector.SwipeSelector
+                android:id="@+id/swipeSelector3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentEnd="true"
+                android:value="@+value/conditionSelector"
+                app:swipe_indicatorSize="5dp"
+                app:swipe_indicatorMargin="5dp"
+                app:swipe_descriptionGravity="center"
+                app:swipe_titleTextAppearance="@style/MyTitleTextApperance"
+                app:swipe_descriptionTextAppearance="@style/MyTitleDescriptionApperance"
+                app:swipe_leftButtonResource="@android:color/transparent"
+                app:swipe_rightButtonResource="@android:color/transparent"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_green_dark"
+        android:src="@drawable/play_button"
+        style="?selectableItemBackground"
+    />
+
+
+
+
+
+
+</RelativeLayout>
